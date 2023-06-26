@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  waterlevel_exporter:
+    build: .
+    ports:
+      - 9294:9292
+    restart: unless-stopped
+
